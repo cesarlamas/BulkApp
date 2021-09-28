@@ -1,12 +1,14 @@
 import React from 'react';
 import { Button, View, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-const Something = () => {
+
+const MainApp = ({userid}) => {
+    console.log("ERROR",userid)
     return(
         <View>
-            <Text>aSADFSA</Text>
+            <Text></Text>
         </View>
     )
 }
 
-export default Something;
+export default MainApp;
