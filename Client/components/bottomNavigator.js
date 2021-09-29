@@ -19,11 +19,11 @@ function MyTabs({route}) {
   
 
     const getroutine = async() => {
-      console.log("is this working")
-      const res = await fetch(`http://127.0.0.1:3001/getroutinebyuserid/${userid}`).then((res)=> res.json())
-      console.log("is this working",res)
+      
+      const res = await fetch(`http://192.168.0.13:3001/getroutinebyuserid/${userid}`).then((res)=> res.json())
+      
       setroutine(res)
-      console.log("Get rotuine",routine)
+  
     }
     return (
       

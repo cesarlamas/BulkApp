@@ -21,7 +21,7 @@ const Exercises = ({userid,onnewroutineadded,routineName}) => {
 
     const addExerciseIntoRoutine = async(exerciseid) =>{
     
-        const res = await fetch("http://127.0.0.1:3001/exerciseroutine",{
+        const res = await fetch("http://192.168.0.13:3001/exerciseroutine",{
             method: 'POST',
             headers: {
                 'accept' : 'application/json',

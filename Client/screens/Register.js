@@ -16,7 +16,7 @@ const Register = ({navigation}) => {
 
     const postUser = async(user) =>{
         
-        const newUser = await fetch("http://127.0.0.1:3001/post",{
+        const newUser = await fetch("http://192.168.0.13:3001/post",{
             method: 'POST',
             headers: {
                 'accept' : 'application/json',

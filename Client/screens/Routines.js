@@ -4,8 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import {ModalExercises} from "../components/ModalCreateRoutine"
 
 const Routines = ({userid,routineName,routine}) => {
-    console.log("userid in routines", userid)
-    // const [routine,setroutine] = useState([])
+
     const [routinecreated,setroutinecreated] = useState(false)
     const [modalVisible,setModalVisible] = useState(false)
     const [routineid,setroutineid] = useState(null)

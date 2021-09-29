@@ -10,7 +10,7 @@ const Login = ({navigation}) => {
     });
 
     const postLogin = async(user) =>{
-        const userlog = await fetch("http://127.0.0.1:3001/login",{
+        const userlog = await fetch("http://192.168.0.13:3001/login",{
             method: 'POST',
             headers: {
                 'accept' : 'application/json',

@@ -11,7 +11,7 @@ const ModalCreateRoutine = ({userid,setroutineid,onnewroutineadded}) => {
 });
 
 const postRoutine = async(name) => {
-    const newRoutine = await fetch("http://10.10.22.44:3001/newroutine",{
+    const newRoutine = await fetch("http://192.168.0.13:3001/newroutine",{
         method: 'POST',
         headers: {
             'accept' : 'application/json',
@@ -20,7 +20,6 @@ const postRoutine = async(name) => {
         body: JSON.stringify({name,userid})
     }
     )
-    console.log(newRoutine)
     const json =  await newRoutine.json()
     setroutineid(json.rows[0].routineid)
     return json
